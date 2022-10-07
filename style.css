@@ -1,0 +1,193 @@
+.container{
+    width: 80%;
+    height: auto;
+    background-color: none;
+    margin-left: 150px;
+   
+}
+
+h1{
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+}
+b{
+    font-size: 25px;
+}
+p {
+    font-size: 20px;
+    color: blue;
+}
+/* ####################################################################### */
+.con-box{
+    text-align: center;
+    background-image: url("https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/mastehead(web).svg");
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn{
+    width: 150px;
+    height: 30px;
+    color:white;
+    background-color: blueviolet;
+    border-radius: 20px;
+}
+/* ############################################################# */
+
+.nav-bar{
+     display: flex;
+     float: right;
+}
+
+
+.btn1{
+    margin: 30px 10px;
+    color:black;
+    background-color: aqua;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+
+}
+img{
+    height: 40px;
+    margin-top: 30px;
+}
+/* ################################################################### */
+.flex-con{
+ display: flex;
+ justify-content: space-evenly;
+ 
+}
+.flex-item{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    border: 3px solid black; 
+} 
+@media screen and (max-width: 750px){
+
+    .flex-con{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+/* ############################################### */
+.button-con{
+display: flex;
+justify-content: center;
+
+}
+.btn-item{
+    background-color: lightpink;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 30px;
+    margin: 15px;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 480px)
+{
+    .button-con{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .btn-item{
+        background-color: turquoise;
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+        border-radius: 30px;
+        margin: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px)
+{
+    .button-con{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .btn-item{
+        background-color: orangered;
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+        border-radius: 30px;
+        margin: 15px;
+    }
+}
+/* ############################################################### */
+.cont{
+height: 544px;
+width: 100%;
+border: 2px solid black;
+display: flex;
+/* Initialize the container as a flex box */
+
+/* Flex properties for a flex container */
+
+/* flex-direction: row; (Default value of flex-direction is row) */
+/* flex-direction: column;
+flex-direction: row-reverse;
+flex-direction: column-reverse; */
+
+
+/* flex-wrap: wrap; (Default value of flex-direction is no-wrap) */
+/* flex-wrap: wrap-reverse; */
+
+/* This is a shorthand for flex-direction: and flex-wrap: ;; */
+/* flex-flow: row-reverse wrap; */
+
+/* justify-content will justify the content in horizontal direction */
+/* justify-content: center; */
+/* justify-content: space-between; */
+/* justify-content: space-evenly; */
+/* justify-content: space-around; */
+
+/* justify-content will justify the content in vertical direction */
+/* align-items: center; */
+/* align-items: flex-end; */
+/* align-items: flex-start; */
+/* align-items: stretch; */
+}
+
+.items {
+width: 200px;
+height: 200px;
+background-color:darkorange;
+border: 2px solid green;
+margin: 10px;
+padding: 3px;
+font-size: large;
+text-align: center;
+}
+
+
+
+#items_b {
+/* flex-grow: 3;
+flex-shrink: 3 ; */
+flex-basis: 160px;
+/* when flex-direction is set to row flex-basis: will control width */
+/* when flex-direction is set to column flex-basis: will control height */
+}
+
+#items_c {
+/* flex: 2 2 230px; */
+/* align-self: flex-start; */
+align-self: flex-end;
+align-self: center;
+}
+
